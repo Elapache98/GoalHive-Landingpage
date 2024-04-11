@@ -2,13 +2,37 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fafafa;
 }
+
+h1 {
+color: #415472;
+}
+
+
+#logo {
+    height: 64px; /* Set the height of the logo */
+    margin-right: 16px; /* Add some spacing between logo and nav */
+}
+
 
 nav {
     background-color: #faefd7;
-    padding: 10px 20px;
-    position:fixed;
-    width: 100%;
+    padding: 8px 16px; /* Adjusted padding */
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+nav li {
+    margin: 10px 8px; /* Adjusted margin */
+    margin-right: 16px; /* Adjusted margin-right */
+    background: #F4F6FF;
+    padding: 8px; /* Adjusted padding */
+    border-radius: 4px;
+    font-size: small;
+    justify-self: flex-end;
 }
 
 nav ul {
@@ -17,20 +41,20 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+
 }
 
-nav li {
-    margin: 10px 0;
-    margin-right: 24px;
-    background: #F4F6FF;
-    padding:8px;
-    border-radius: 4px;
-}
+
 
 nav a {
     text-decoration: none;
-    color: #415472;
+    color: #070809;
     font-weight: medium ;
+}
+
+#mainBody{
+    text-align:center;
+    margin:0 auto;
 }
 
 @media (max-width: 768px) {
@@ -44,9 +68,26 @@ nav a {
         margin: 10px 0;
         margin-right: 24px;
         background: #F4F6FF;
-        padding:8px;
+        padding: 4px;
         border-radius: 4px;
-        
-
     }
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #414FC7;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#conversion{
+    margin-left: auto;
+   align-items: center;
+    
+}
+#conversion a {
+    margin-right: 8px;
 }
