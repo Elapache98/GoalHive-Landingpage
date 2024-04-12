@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 96px;
     background-color: #fafafa;
 }
 
@@ -23,6 +23,11 @@ nav {
     display: flex;
     align-items: center;
     flex-grow: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  
 }
 
 nav li {
@@ -54,24 +59,47 @@ nav a {
 
 #mainBody{
     text-align:center;
-    margin:0 auto;
+    margin: 8px; 
+
 }
 
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: grid;
+        flex-direction: column; /* Change flex-direction to column */
         align-items: center;
         margin-right: 16px;
     }
 
     nav li {
         margin: 10px 0;
-        margin-right: 24px;
+        margin-right: 5px;
         background: #F4F6FF;
-        padding: 4px;
+        padding: 8px;
         border-radius: 4px;
+        font-size: x-small;
+        display: none; /* Hide navigation links by default */
+    }
+
+    #logo {
+        height: 48px;
+        margin-right: 8px; /* Add some spacing between logo and nav */
+    }
+
+    #conversion {
+        margin-left: 2px;
+        align-items: center;
+        display: flex;
+        font-size: x-small;
+        display: none; /* Hide conversion elements by default */
+    }
+
+    #hamburger {
+        display: block!important; /* Display the hamburger icon */
     }
 }
+
+
+
 
 button {
     padding: 8px 16px;
@@ -91,3 +119,11 @@ button {
 #conversion a {
     margin-right: 8px;
 }
+#hamburger {
+    
+    display:none;
+     border: none;
+     font-size: 16px;
+     cursor: pointer;
+ }
+
