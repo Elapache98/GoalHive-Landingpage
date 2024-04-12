@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding-top: 96px;
-    background-color: #fafafa;
+    background-color: #f9fafb;
 }
 
 h1 {
@@ -99,6 +99,21 @@ button {
 
 @media (max-width: 768px) {
 
+    nav {
+        background-color: #faefd7;
+        padding: 8px 16px; /* Adjusted padding */
+        width: auto;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        flex-grow: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      row-gap: 0px;
+    }
+
     nav ul {
         flex-direction: column; /* Change flex-direction to column */
         align-items: center;
@@ -133,6 +148,7 @@ button {
 
     #hamburger {
         display: block!important; /* Display the hamburger icon */
+        
     }
 
     h1{
