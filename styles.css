@@ -7,9 +7,14 @@ body {
 
 h1 {
 color: #415472;
+font-size:xx-large;
 }
 
+p {
+    font-size: 16px;
+    color: #3a3535;
 
+}
 #logo {
     height: 64px; /* Set the height of the logo */
     margin-right: 16px; /* Add some spacing between logo and nav */
@@ -63,43 +68,6 @@ nav a {
 
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Change flex-direction to column */
-        align-items: center;
-        margin-right: 16px;
-    }
-
-    nav li {
-        margin: 10px 0;
-        margin-right: 5px;
-        background: #F4F6FF;
-        padding: 8px;
-        border-radius: 4px;
-        font-size: x-small;
-        display: none; /* Hide navigation links by default */
-    }
-
-    #logo {
-        height: 48px;
-        margin-right: 8px; /* Add some spacing between logo and nav */
-    }
-
-    #conversion {
-        margin-left: 2px;
-        align-items: center;
-        display: flex;
-        font-size: x-small;
-        display: none; /* Hide conversion elements by default */
-    }
-
-    #hamburger {
-        display: block!important; /* Display the hamburger icon */
-    }
-}
-
-
-
 
 button {
     padding: 8px 16px;
@@ -126,4 +94,60 @@ button {
      font-size: 16px;
      cursor: pointer;
  }
+
+/*responsive styling*/
+
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column; /* Change flex-direction to column */
+        align-items: center;
+        margin-right: 16px;
+        display: block;
+    }
+
+    nav li {
+        margin: 10px 0;
+        margin-right: 5px;
+        background: #F4F6FF;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: x-small;
+        display: block!important; /* Hide navigation links by default */
+    }
+
+    #logo {
+        height: 48px;
+        margin-right: 8px; /* Add some spacing between logo and nav */
+    }
+
+    #conversion {
+        margin: 8px;
+        align-items: center;
+        display: flex;
+        font-size: x-small;
+        display: none; /* Hide conversion elements by default */
+        flex-direction: column;
+        gap: 8px ;
+    }
+
+    #hamburger {
+        display: block!important; /* Display the hamburger icon */
+    }
+
+    h1{
+        font-size: x-large;
+    }
+
+    p {
+        font-size: 14px;
+        color: #3a3535;
+
+    }
+
+}
+
+
+
+
 
