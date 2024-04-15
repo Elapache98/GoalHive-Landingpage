@@ -15,8 +15,13 @@ font-size:xx-large;
 p {
     font-size: 16px;
     color: #3a3535;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 24px;
 
 }
+
 #logo {
     height: 64px; /* Set the height of the logo */
     margin-right: 16px; /* Add some spacing between logo and nav */
@@ -68,7 +73,7 @@ nav a {
     text-align:center;
     margin: 0 auto; 
     padding: 8px;
-    max-width:1000px;
+    width:80vw;
 
 
 
@@ -187,6 +192,10 @@ button {
         font-size: 14px;
         color: #3a3535;
         line-height: 20px;
+        width: 95%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 16px;
      
 
 
@@ -198,6 +207,7 @@ button {
         margin: 0 auto;
         display: block;
         border-radius: 8px;
+
     }
     
 
