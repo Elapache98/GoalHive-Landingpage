@@ -167,12 +167,12 @@ button {
    
 /*responsive styling*/
 
-@media (max-width: 768px) {
+@media (max-width: 770px) and (min-width:320px) {
 
     nav {
         background-color: rgba(250, 239, 215, 0.75); /* Use rgba for background color to apply opacity only to the color */
         backdrop-filter: blur(6px);
-        padding: 8px 16px; /* Adjusted padding */
+        padding: 8px 32px; /* Adjusted padding */
         width: auto;
         display: flex;
         flex-direction:column;
@@ -228,9 +228,10 @@ button {
     }
 
     #mainBody, #secondBody{
-        text-align:center;
-        margin: 8px; 
-        padding: 28px;
+        text-align:center; 
+        padding: 32px;
+        align-self: center;
+        
     
     }
 
@@ -242,6 +243,14 @@ button {
         font-size:large;
     }
 
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding-top: 96px;
+        background-color: #f9fafb;
+        justify-content: center;
+        align-items: center;
+    }
   
 
     p {
