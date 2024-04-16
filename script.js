@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listener for window resize
     window.addEventListener('resize', function() {
         // Reset display for navLinks and conversion when window size changes
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 770) {
             navLinks.style.display = 'flex';
             conversion.style.display = 'flex';
         }
         else {
-            if (window.innerWidth < 768) {
+            if (window.innerWidth < 770 || window.innerWidth === 770) {
                 navLinks.style.display = 'none';
                 conversion.style.display ='none';
             }
