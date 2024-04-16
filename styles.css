@@ -12,6 +12,13 @@ color: #415472;
 font-size:xx-large;
 }
 
+h2{
+    color: #415472;
+    font-size:x-large; 
+}
+
+
+
 p {
     font-size: 16px;
     color: #3a3535;
@@ -19,6 +26,7 @@ p {
     text-align: center;
     margin: auto;
     margin-bottom: 24px;
+    line-height: 24px;
 
 }
 
@@ -29,7 +37,8 @@ p {
 
 
 nav {
-    background-color: #faefd7;
+    background-color: rgba(250, 239, 215, 0.75); /* Use rgba for background color to apply opacity only to the color */
+    backdrop-filter: blur(6px);
     padding: 8px 16px; /* Adjusted padding */
     width: auto;
     display: flex;
@@ -39,8 +48,8 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-  
 }
+
 
 nav li {
     margin: 10px 8px; /* Adjusted margin */
@@ -69,11 +78,12 @@ nav a {
     font-weight: medium ;
 }
 
-#mainBody{
+#mainBody, #secondBody{
     text-align:center;
     margin: 0 auto; 
     padding: 8px;
     width:80vw;
+    margin-bottom: 72px;
 
 
 
@@ -121,7 +131,8 @@ button {
 @media (max-width: 768px) {
 
     nav {
-        background-color: #faefd7;
+        background-color: rgba(250, 239, 215, 0.75); /* Use rgba for background color to apply opacity only to the color */
+        backdrop-filter: blur(6px);
         padding: 8px 16px; /* Adjusted padding */
         width: auto;
         display: flex;
@@ -177,7 +188,7 @@ button {
         
     }
 
-    #mainBody{
+    #mainBody, #secondBody{
         text-align:center;
         margin: 8px; 
         padding: 28px;
@@ -187,6 +198,12 @@ button {
     h1{
         font-size: x-large;
     }
+
+    h2{
+        font-size:large;
+    }
+
+  
 
     p {
         font-size: 14px;
