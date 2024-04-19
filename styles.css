@@ -132,7 +132,7 @@ button {
 /*filter componenet styling*/
 
 #filterContainer{
-    background-color: #fafafa;
+    background-color: #ffffff;
     padding: 16px;
     border:    1px solid;
     border-radius: 16px 16px 0px 0px;
@@ -158,7 +158,7 @@ button {
 
 
 #filterBottom{
-    background-color: #fafafa;
+    background-color: #FAFBFF;
     padding: 16px;
     border: solid;
     border-top-width: 0px;
@@ -176,7 +176,7 @@ button {
 
 }
 
-#reflectionContent{
+.reflectionContent1{
     display: flexbox;
     align-items: start;
 justify-items: left;
@@ -185,7 +185,37 @@ position: relative;
 
 }
 
-#reflectionContent p{
+.reflectionContent1 p{
+margin: 0;
+text-align: left;
+
+}
+
+.reflectionContent2{
+    display: flexbox;
+    align-items: start;
+justify-items: left;
+position: relative;
+
+
+}
+
+.reflectionContent2 p{
+margin: 0;
+text-align: left;
+
+}
+
+.reflectionContent3{
+    display: flexbox;
+    align-items: start;
+justify-items: left;
+position: relative;
+
+
+}
+
+.reflectionContent3 p{
 margin: 0;
 text-align: left;
 
@@ -209,18 +239,20 @@ text-align: left;
     
 }
 .inactiveFilter {
-    background-color:#f5f5f5;
+    background-color:white;
     color: #415472;
     margin-right: 8px;
     border-radius: 8px;
-   
+    border-style: solid;
+   border-color: rgb(106, 110, 116, .25);
+   border-width: .25px;
 
 }
 
 #badge{
-    background-color: #f5f5f5;
+    background-color: #fafafa;
     border-radius: 4px;
-    padding: 4px 8px;
+    padding: 4px 12px;
     font-size:small;
     font-weight: 500;
     border: 1px solid rgb(106, 110, 116, .15);
@@ -364,19 +396,22 @@ text-align: left;
 
     }
     .inactiveFilter {
-        background-color:#f5f5f5;
+        background-color:white;
         color: #415472;
         margin-right: 8px;
         margin-bottom: 4px;
         width:fit-content;
         white-space: nowrap;
         border-radius: 8px;
+        border-style: solid;
+        border-color: rgb(106, 110, 116, .25);
+        border-width: .25px;
        
     
     }
 
     #filterContainer{
-        background-color: #fafafa;
+        background-color: #ffffff;
         padding: 16px;
         border: 1px solid;
         border-radius: 16px 16px 0px 0px;
@@ -394,7 +429,7 @@ text-align: left;
     }
 
     #filterBottom{
-        background-color: #fafafa;
+        background-color: #FAFBFF;
         padding: 16px;
         border: solid;
         border-top-width: 0px;
