@@ -31,15 +31,16 @@ p {
 }
 
 #logo {
-    height: 64px; /* Set the height of the logo */
+    height: 56px; /* Set the height of the logo */
     margin-right: 16px; /* Add some spacing between logo and nav */
+    margin-left: -12px;
 }
 
 
 nav {
     background-color: rgba(250, 239, 215, 0.75); /* Use rgba for background color to apply opacity only to the color */
     backdrop-filter: blur(6px);
-    padding: 8px 16px; /* Adjusted padding */
+    padding: 0px 64px; /* Adjusted padding */
     width: auto;
     display: flex;
     align-items: center;
@@ -142,6 +143,7 @@ button {
     justify-self: center; 
     margin-left: auto;
     margin-right: auto;
+   padding-bottom: 12px!important;
   
 
 }
@@ -160,7 +162,9 @@ button {
 #filterBottom{
     background-color: #FAFBFF;
     padding: 16px;
-    border: solid;
+    padding-top: 12px!important;
+    padding-bottom: 2px!important;
+ border: solid;
     border-top-width: 0px;
     border-right-width: 1px;
     border-left-width: 1px;
@@ -171,6 +175,7 @@ button {
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
     
     
 
@@ -257,7 +262,8 @@ text-align: left;
     font-weight: 500;
     border: 1px solid rgb(106, 110, 116, .15);
     justify-self:start ; 
- width: auto !important;;
+ width: auto !important;
+ margin-bottom: 12px;
   
 }
 
