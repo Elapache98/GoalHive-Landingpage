@@ -5,6 +5,8 @@ body {
     background-color: #f9fafb;
 }
 
+
+
 h1 {
 color: #415472;
 font-size:xx-large;
@@ -14,6 +16,7 @@ h2{
     color: #415472;
     font-size:x-large; 
 }
+
 
 
 
@@ -133,17 +136,21 @@ button {
 /*filter componenet styling*/
 
 #filterContainer{
-    background-color: #ffffff;
+    background-color: white;
     padding: 16px;
-    border:    1px solid;
+    border: solid;
     border-radius: 16px 16px 0px 0px;
-    border-color: rgb(135, 133, 133,.25);
-    width: 50vw;
+    border-color: rgba(70, 68, 68, 0.25);
+    width: 45vw;
     align-content: baseline;  
     justify-self: center; 
     margin-left: auto;
     margin-right: auto;
    padding-bottom: 12px!important;
+   border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: .75px;
   
 
 }
@@ -151,7 +158,7 @@ button {
 #filterPicture{
     width: 100%;
     height:auto;
-    max-height: 400px;
+    max-height: 350px;
     border-radius: 4px;
     object-fit:cover;
     object-position: center;
@@ -170,8 +177,8 @@ button {
     border-left-width: 1px;
     border-bottom-width: 1px;
     border-radius: 0px 0px 16px 16px;
-    border-color: rgb(135, 133, 133,.25);
-    width: 50vw;
+    border-color: rgba(70, 68, 68, 0.25);
+    width: 45vw;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -244,7 +251,7 @@ text-align: left;
     
 }
 .inactiveFilter {
-    background-color:white;
+    background-color:#fafafa;
     color: #415472;
     margin-right: 8px;
     border-radius: 8px;
@@ -255,8 +262,8 @@ text-align: left;
 }
 
 #badge{
-    background-color: #fafafa;
-    border-radius: 4px;
+    background-color:#fafafa;
+    border-radius: 8px;
     padding: 4px 12px;
     font-size:small;
     font-weight: 500;
@@ -267,8 +274,61 @@ text-align: left;
   
 }
 
+#stackContainer{
+    text-align:center;
+    margin: 0 auto; 
+    width:60vw;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.stack {
+    position: relative;
+
+    width: 100%;
+    z-index: 5;
+    transition: position 0.3s ease;
+    
+    
+  }
 
 
+  .stack.sticky {
+    position: sticky; /* Change back to relative positioning once all stack cards are scrolled past */
+  }
+
+  
+
+.stack_card {
+    
+    border-radius: 8px;
+    border: solid;
+    align-items: center;
+    width:60vw;
+    position: sticky;
+    top: 90px;
+    box-shadow: 0 -1px 3px rgba(local-shadow-color, .1), 0 -1px 2px rgba(local-shadow-color, .25);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    margin-bottom: 32px;
+    
+  }
+  
+  .stack_card:nth-child(1) {
+    background-color: #edeffa/* Color for the first card */;
+    z-index: 1;
+  }
+  
+  .stack_card:nth-child(2) {
+    background-color:#edeffa /* Color for the second card */;
+    z-index: 2;
+  }
+
+  .stack_card:nth-child(3) {
+    background-color:#edeffa /* Color for the second card */;
+    z-index: 3;
+  }
 
    
 /*responsive styling*/
@@ -402,7 +462,7 @@ text-align: left;
 
     }
     .inactiveFilter {
-        background-color:white;
+        background-color: #fafafa;
         color: #415472;
         margin-right: 8px;
         margin-bottom: 4px;
@@ -417,13 +477,17 @@ text-align: left;
     }
 
     #filterContainer{
-        background-color: #ffffff;
+        background-color: white;
         padding: 16px;
-        border: 1px solid;
+        border: solid;
         border-radius: 16px 16px 0px 0px;
         border-color: rgb(135, 133, 133,.25);
         width:auto;
         align-content: baseline;  
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-left-width: 1px;
+        border-bottom-width: .75px;
        
     }
 
@@ -457,13 +521,29 @@ text-align: left;
     #badge{
     
         border: 1px solid rgb(106, 110, 116, .15); 
-        border-radius: 4px;
+        border-radius: 8px;
         padding: 4px 8px 4px 8px;
         width: fit-content;
         font-size:x-small;
         align-self: center;
     
     }
+
+    .stack_card {
+    
+        border-radius: 8px;
+        border: solid;
+        align-items: center;
+        width:auto;
+        position: sticky;
+        top: 128px;
+        box-shadow: 0 -1px 3px rgba(local-shadow-color, .1), 0 -1px 2px rgba(local-shadow-color, .25);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 24px;
+        margin-bottom: 32px;
+        
+      }
 
 }
 
