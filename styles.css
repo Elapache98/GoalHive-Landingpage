@@ -5,6 +5,8 @@ body {
     background-color: #f9fafb;
 }
 
+
+
 h1 {
 color: #415472;
 font-size:xx-large;
@@ -14,6 +16,7 @@ h2{
     color: #415472;
     font-size:x-large; 
 }
+
 
 
 
@@ -271,8 +274,61 @@ text-align: left;
   
 }
 
+#stackContainer{
+    text-align:center;
+    margin: 0 auto; 
+    width:60vw;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.stack {
+    position: relative;
+
+    width: 100%;
+    z-index: 5;
+    transition: position 0.3s ease;
+    
+    
+  }
 
 
+  .stack.sticky {
+    position: sticky; /* Change back to relative positioning once all stack cards are scrolled past */
+  }
+
+  
+
+.stack_card {
+    
+    border-radius: 8px;
+    border: solid;
+    align-items: center;
+    width:60vw;
+    position: sticky;
+    top: 90px;
+    box-shadow: 0 -1px 3px rgba(local-shadow-color, .1), 0 -1px 2px rgba(local-shadow-color, .25);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    margin-bottom: 32px;
+    
+  }
+  
+  .stack_card:nth-child(1) {
+    background-color: #edeffa/* Color for the first card */;
+    z-index: 1;
+  }
+  
+  .stack_card:nth-child(2) {
+    background-color:#edeffa /* Color for the second card */;
+    z-index: 2;
+  }
+
+  .stack_card:nth-child(3) {
+    background-color:#edeffa /* Color for the second card */;
+    z-index: 3;
+  }
 
    
 /*responsive styling*/
@@ -423,11 +479,15 @@ text-align: left;
     #filterContainer{
         background-color: white;
         padding: 16px;
-        border: 1px solid;
+        border: solid;
         border-radius: 16px 16px 0px 0px;
         border-color: rgb(135, 133, 133,.25);
         width:auto;
         align-content: baseline;  
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-left-width: 1px;
+        border-bottom-width: .75px;
        
     }
 
@@ -468,6 +528,22 @@ text-align: left;
         align-self: center;
     
     }
+
+    .stack_card {
+    
+        border-radius: 8px;
+        border: solid;
+        align-items: center;
+        width:auto;
+        position: sticky;
+        top: 128px;
+        box-shadow: 0 -1px 3px rgba(local-shadow-color, .1), 0 -1px 2px rgba(local-shadow-color, .25);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 24px;
+        margin-bottom: 32px;
+        
+      }
 
 }
 
