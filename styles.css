@@ -10,13 +10,29 @@ body {
 h1 {
 color: #415472;
 font-size:xx-large;
+max-width: 550px;
+margin: auto;
+margin-bottom: 28px;
+    line-height: 32px;
 }
 
 h2{
     color: #415472;
     font-size:x-large; 
+    overflow-wrap:break-word;
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 16px;
+    line-height: 32px;
+    
 }
 
+h4{
+    color: #415472;
+    font-size:medium; 
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
 
 
 
@@ -87,7 +103,7 @@ nav a {
     text-align:center;
     margin: 0 auto; 
     padding: 8px;
-    width:80vw;
+    width:90vw;
     margin-bottom: 32px;
 
 
@@ -140,17 +156,20 @@ button {
     padding: 16px;
     border: solid;
     border-radius: 16px 16px 0px 0px;
-    border-color: rgba(70, 68, 68, 0.25);
+    border-color: rgb(65, 84, 114, .25);
     width: 45vw;
     align-content: baseline;  
     justify-self: center; 
     margin-left: auto;
     margin-right: auto;
+    margin-top: 48px;
    padding-bottom: 12px!important;
-   border-top-width: 1px;
-    border-right-width: 1px;
-    border-left-width: 1px;
-    border-bottom-width: .75px;
+   border-top-width: .75px;
+    border-right-width: .75px;
+    border-left-width: .75px;
+    border-bottom-width: .5px;
+    box-shadow: 2px 2px 4px 4px rgb(65, 84, 114,.025);
+
   
 
 }
@@ -173,19 +192,20 @@ button {
     padding-bottom: 2px!important;
  border: solid;
     border-top-width: 0px;
-    border-right-width: 1px;
-    border-left-width: 1px;
-    border-bottom-width: 1px;
+    border-right-width: .75px;
+    border-left-width: .75px;
+    border-bottom-width: .75px;
     border-radius: 0px 0px 16px 16px;
-    border-color: rgba(70, 68, 68, 0.25);
+    border-color: rgb(65, 84, 114, .25);
     width: 45vw;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
+    margin-bottom: 32px;
+    box-shadow: 2px 2px 4px 4px rgb(65, 84, 114,.045);
+    border-color: rgb(65, 84, 114, .25);
     
-    
-
 }
 
 .reflectionContent1{
@@ -277,58 +297,83 @@ text-align: left;
 #stackContainer{
     text-align:center;
     margin: 0 auto; 
-    width:60vw;
-    margin-bottom: 32px;
-    position: relative;
+    width:90vw;
+    height: auto;
+    margin-bottom: 16px;
 }
 
 .stack {
-    position: relative;
+    position: sticky;
 
     width: 100%;
-    z-index: 5;
-    transition: position 0.3s ease;
+   
+    transition: position 0.5s ease;
+ 
     
     
   }
 
-
-  .stack.sticky {
-    position: sticky; /* Change back to relative positioning once all stack cards are scrolled past */
-  }
 
   
 
 .stack_card {
     
-    border-radius: 8px;
-    border: solid;
+    border-radius: 16px;
+    border: solid .75px;
+    border-color: rgb(65, 84, 114, .25);
     align-items: center;
-    width:60vw;
+    width: 50vw;
     position: sticky;
     top: 90px;
     box-shadow: 0 -1px 3px rgba(local-shadow-color, .1), 0 -1px 2px rgba(local-shadow-color, .25);
     margin-left: auto;
     margin-right: auto;
     padding: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 180px;
+    margin-top: 64px;
     
+    height:auto;
   }
   
   .stack_card:nth-child(1) {
-    background-color: #edeffa/* Color for the first card */;
+    background-color: #FAFBFF;    
     z-index: 1;
+    box-shadow: 2px 2px 4px 4px rgb(65, 84, 114,.045);
+
   }
   
   .stack_card:nth-child(2) {
-    background-color:#edeffa /* Color for the second card */;
+    background-color: #FAFBFF;    
     z-index: 2;
+
+
+
   }
 
   .stack_card:nth-child(3) {
-    background-color:#edeffa /* Color for the second card */;
+    background-color: #FAFBFF;    
     z-index: 3;
+    
+
+    
+    
+
   }
+
+  .stack_card:nth-child(4) {
+    background-color: #FAFBFF;    
+    z-index: 4;
+    margin-bottom: -80px!important;
+    
+
+    
+    
+
+  }
+
+
+  
+  
 
    
 /*responsive styling*/
@@ -407,6 +452,14 @@ text-align: left;
 
     h2{
         font-size:large;
+ color: #415472;
+ overflow-wrap:break-word;
+max-width: 600px;
+margin: auto;
+margin-bottom: 16px;
+line-height: 28px;
+            
+        
     }
 
     body {
@@ -481,7 +534,7 @@ text-align: left;
         padding: 16px;
         border: solid;
         border-radius: 16px 16px 0px 0px;
-        border-color: rgb(135, 133, 133,.25);
+        border-color: rgb(65, 84, 114, .25);
         width:auto;
         align-content: baseline;  
         border-top-width: 1px;
@@ -507,13 +560,14 @@ text-align: left;
         border-left-width: 1px;
         border-bottom-width: 1px;
         border-radius: 0px 0px 16px 16px;
-        border-color: rgb(135, 133, 133,.25);
         width: auto;
         height: auto;
         align-content: baseline;  
         justify-self: center; 
         margin-left: auto;
         margin-right: auto;
+        box-shadow: 2px 2px 4px 4px rgb(65, 84, 114,.045);
+        border-color: rgb(65, 84, 114, .25);
     
     }
     
@@ -531,8 +585,8 @@ text-align: left;
 
     .stack_card {
     
-        border-radius: 8px;
-        border: solid;
+        border-radius: 16px;
+        border: solid, 1px;
         align-items: center;
         width:auto;
         position: sticky;
@@ -540,8 +594,10 @@ text-align: left;
         box-shadow: 0 -1px 3px rgba(local-shadow-color, .1), 0 -1px 2px rgba(local-shadow-color, .25);
         margin-left: auto;
         margin-right: auto;
-        padding: 24px;
-        margin-bottom: 32px;
+        padding: 16px;
+        margin-top:28px ;
+        
+        border-color: rgb(65, 84, 114, .25);
         
       }
 
