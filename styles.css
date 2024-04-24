@@ -417,13 +417,10 @@ text-align: left;
         border-radius: 4px;
         font-size: x-small;
         justify-content: center;
-NavLogic
-        display: block; /* Hide navigation links by default */
-        flex-direction: column;
-
-        display: block; /* Hide navigation links by default */
- main
+        display: block;
+        flex-direction: grid;
     }
+
 
     #logo {
         height: 48px;
