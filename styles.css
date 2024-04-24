@@ -80,6 +80,7 @@ nav li {
     border-radius: 4px;
     font-size: small;
     justify-self: flex-end;
+    
 }
 
 nav ul {
@@ -163,8 +164,8 @@ button {
     justify-self: center; 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 48px;
    padding-bottom: 12px!important;
+   margin-top: 32px;
    border-top-width: .75px;
     border-right-width: .75px;
     border-left-width: .75px;
@@ -331,7 +332,7 @@ text-align: left;
     margin-right: auto;
     padding: 24px;
     margin-bottom: 180px;
-    margin-top: 64px;
+    margin-top: 36px;
     
     height:auto;
   }
@@ -416,8 +417,12 @@ text-align: left;
         border-radius: 4px;
         font-size: x-small;
         justify-content: center;
-        display: block!important; /* Hide navigation links by default */
+NavLogic
+        display: block; /* Hide navigation links by default */
         flex-direction: column;
+
+        display: block; /* Hide navigation links by default */
+ main
     }
 
     #logo {
