@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Initially show the navigation links and conversion items till window is resized.
     navLinks.style.display = 'flex';
-conversion.style.display = 'flex';
+conversion.style.display = 'none';
 
 
 
