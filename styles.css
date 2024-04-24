@@ -388,7 +388,7 @@ text-align: left;
         padding: 8px 32px; /* Adjusted padding */
         width: auto;
         display: flex;
-        flex-direction:column;
+        flex-direction:grid;
         justify-content: center;
         justify-items: center;
         flex-grow: 1;
@@ -406,6 +406,7 @@ text-align: left;
         align-items: center;
         margin-right: 16px;
         display: block;
+        flex-direction: column;
     }
 
     nav li {
@@ -416,7 +417,12 @@ text-align: left;
         border-radius: 4px;
         font-size: x-small;
         justify-content: center;
+NavLogic
         display: block; /* Hide navigation links by default */
+        flex-direction: column;
+
+        display: block; /* Hide navigation links by default */
+ main
     }
 
     #logo {

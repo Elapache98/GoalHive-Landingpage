@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var hamburger = document.getElementById('hamburger');
     var navLinks = document.getElementById('nav-links');
     var conversion = document.getElementById('conversion');
+    var nav = document.getElementById('nav');
 
 // Initially show the navigation links and conversion items till window is resized.
     navLinks.style.display = 'flex';
@@ -17,7 +18,42 @@ conversion.style.display = 'flex';
         const shouldDisplay = navLinks.style.display === 'none' || navLinks.style.display === '';
         navLinks.style.display = shouldDisplay ? 'flex' : 'none';
         conversion.style.display = shouldDisplay ? 'flex' : 'none';
+ NavLogic
+    
+        // Change flex direction to grid when navLinks are displayed
+        if (shouldDisplay) {
+            nav.style.flexDirection = 'column';
+            
+        } else {
+            nav.style.flexDirection = ''; // Revert to default style
+            
+        }
     }
+
+
+
+    // Event listener for hamburger menu click
+    hamburger.addEventListener('click', toggleMenu);
+
+    // Event listener for window resize
+    window.addEventListener('resize', function() {
+        // Reset display for navLinks and conversion when window size changes
+        if (window.innerWidth > 770) {
+            navLinks.style.display = 'flex';
+            conversion.style.display = 'flex';
+            nav.style.flexDirection='';
+        }
+        else {
+            if (window.innerWidth < 770 || window.innerWidth === 770) {
+                navLinks.style.display = 'none';
+                conversion.style.display ='none';
+               
+            }
+        }
+    });
+
+    }
+ main
 
 // Event listener for window resize
 window.addEventListener('resize', function() {
