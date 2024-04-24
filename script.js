@@ -2,18 +2,27 @@ document.addEventListener('DOMContentLoaded', function() {
     var hamburger = document.getElementById('hamburger');
     var navLinks = document.getElementById('nav-links');
     var conversion = document.getElementById('conversion');
+    var nav = document.getElementById('nav');
 
     // Function to handle hamburger menu click event
     function toggleMenu() {
         // Toggle display for navLinks and conversion
-        if (navLinks.style.display === 'none' || navLinks.style.display === '') {
-            navLinks.style.display = 'flex';
-            conversion.style.display = 'flex';
+        const shouldDisplay = navLinks.style.display === 'none' || navLinks.style.display === '';
+        navLinks.style.display = shouldDisplay ? 'flex' : 'none';
+        conversion.style.display = shouldDisplay ? 'flex' : 'none';
+    
+        // Change flex direction to grid when navLinks are displayed
+        if (shouldDisplay) {
+            nav.style.flexDirection = 'column';
+            
         } else {
-            navLinks.style.display = 'none';
-            conversion.style.display = 'none';
+            nav.style.flexDirection = ''; // Revert to default style
+            
         }
     }
+
+
+
     // Event listener for hamburger menu click
     hamburger.addEventListener('click', toggleMenu);
 
@@ -23,11 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (window.innerWidth > 770) {
             navLinks.style.display = 'flex';
             conversion.style.display = 'flex';
+            nav.style.flexDirection='';
         }
         else {
             if (window.innerWidth < 770 || window.innerWidth === 770) {
                 navLinks.style.display = 'none';
                 conversion.style.display ='none';
+               
             }
         }
     });
