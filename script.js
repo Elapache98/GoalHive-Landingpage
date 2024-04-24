@@ -11,24 +11,21 @@ conversion.style.display = 'flex';
 
 
 
+function toggleMenu() {
+    // Toggle display for navLinks and conversion
+    const shouldDisplay = navLinks.style.display === 'none' || navLinks.style.display === '';
+    navLinks.style.display = shouldDisplay ? 'flex' : 'none';
+    conversion.style.display = shouldDisplay ? 'flex' : 'none';
 
-// Function to handle hamburger menu click event
-    function toggleMenu() {
-        // Toggle display for navLinks and conversion
-        const shouldDisplay = navLinks.style.display === 'none' || navLinks.style.display === '';
-        navLinks.style.display = shouldDisplay ? 'flex' : 'none';
-        conversion.style.display = shouldDisplay ? 'flex' : 'none';
- NavLogic
-    
-        // Change flex direction to grid when navLinks are displayed
-        if (shouldDisplay) {
-            nav.style.flexDirection = 'column';
-            
-        } else {
-            nav.style.flexDirection = ''; // Revert to default style
-            
-        }
+    // Change flex direction to grid when navLinks are displayed
+    if (shouldDisplay) {
+        nav.style.flexDirection = 'column';
+       
+    } else {
+        nav.style.flexDirection = ''; // Revert to default style
+        
     }
+}
 
 
 
@@ -52,25 +49,7 @@ conversion.style.display = 'flex';
         }
     });
 
-    }
- main
-
-// Event listener for window resize
-window.addEventListener('resize', function() {
-    // Reset display for navLinks and conversion when window size changes
-    if (window.innerWidth > 800) {
-        navLinks.style.display = 'flex';
-        conversion.style.display = 'flex';
-    } else {
-        navLinks.style.display = 'none';
-        conversion.style.display = 'none';
-    }
-});
-
-// Event listener for hamburger menu click
-hamburger.addEventListener('click', toggleMenu);
-
-});
+    });
 
 function filterSelection(filter) {
     // Hide all filter elements
