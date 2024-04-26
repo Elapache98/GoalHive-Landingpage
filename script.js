@@ -17,7 +17,7 @@ function toggleMenu() {
     navLinks.style.display = shouldDisplay ? 'flex' : 'none';
     conversion.style.display = shouldDisplay ? 'flex' : 'none';
 
-    // Change flex direction to grid when navLinks are displayed
+    // Change flex direction to column when navLinks are displayed
     if (shouldDisplay) {
         nav.style.flexDirection = 'column';
        

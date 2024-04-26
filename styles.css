@@ -18,9 +18,9 @@ margin-bottom: 28px;
 
 h2{
     color: #415472;
-    font-size:x-large; 
+    font-size:26px; 
     overflow-wrap:break-word;
-    max-width: 650px;
+    max-width: 700px;
     margin: auto;
     margin-bottom: 16px;
     line-height: 32px;
@@ -165,7 +165,7 @@ button {
     margin-left: auto;
     margin-right: auto;
    padding-bottom: 12px!important;
-   margin-top: 32px;
+   margin-top: 48px;
    border-top-width: .75px;
     border-right-width: .75px;
     border-left-width: .75px;
@@ -204,7 +204,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
     box-shadow: 2px 2px 4px 4px rgb(65, 84, 114,.045);
     border-color: rgb(65, 84, 114, .25);
     
@@ -222,6 +222,7 @@ position: relative;
 .reflectionContent1 p{
 margin: 0;
 text-align: left;
+
 
 }
 
@@ -332,7 +333,7 @@ text-align: left;
     margin-right: auto;
     padding: 24px;
     margin-bottom: 180px;
-    margin-top: 36px;
+    margin-top: 48px;
     
     height:auto;
   }
@@ -436,6 +437,7 @@ text-align: left;
         flex-direction: column;
         justify-self: center;
         gap: 8px ;
+        display: block;
     }
 
     #hamburger {
@@ -447,6 +449,7 @@ text-align: left;
         text-align:center; 
         padding: 16px;
         align-self: center;
+        margin-bottom: 16px;
         
     
     }
@@ -455,14 +458,15 @@ text-align: left;
         font-size: x-large;
     }
 
-    h2{
-        font-size:large;
+ h2{
+
+font-size:18px;
  color: #415472;
  overflow-wrap:break-word;
-max-width: 600px;
-margin: auto;
-margin-bottom: 16px;
-line-height: 28px;
+ max-width: 700px;
+ margin: auto;
+ margin-bottom: 16px;
+ line-height: 24px;
             
         
     }
@@ -470,7 +474,7 @@ line-height: 28px;
     body {
         font-family: Arial, sans-serif;
         margin: 0;
-        padding-top: 96px;
+        padding-top: 72px;
         background-color: #f9fafb;
         justify-content: center;
         align-items: center;
@@ -484,7 +488,7 @@ line-height: 28px;
         width: 95%;
         text-align: center;
         margin: auto;
-        margin-bottom: 16px;
+        margin-bottom: 32px;
      
 
 
@@ -496,6 +500,7 @@ line-height: 28px;
         margin: 0 auto;
         display: block;
         border-radius: 4px;
+        margin-top: 8px;
 
     }
 
@@ -547,6 +552,7 @@ line-height: 28px;
         border-left-width: 1px;
         border-bottom-width: .75px;
         margin-top:28px;
+        
        
     }
 
@@ -572,6 +578,7 @@ line-height: 28px;
         justify-self: center; 
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 8px;
         box-shadow: 2px 2px 4px 4px rgb(65, 84, 114,.045);
         border-color: rgb(65, 84, 114, .25);
     
