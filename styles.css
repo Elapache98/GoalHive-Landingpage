@@ -416,7 +416,7 @@ margin-left: auto;
         top: 0;
         left: 0;
         right: 0;
-      row-gap: 0px;
+      row-gap: 8px;
     }
 
 
@@ -424,14 +424,14 @@ margin-left: auto;
     nav ul {
         flex-direction: column; /* Change flex-direction to column */
         align-items: center;
-        margin-right: 16px;
+     
         display: block;
         flex-direction: column;
     }
 
     nav li {
-        margin: 10px 0;
-        margin-right: 5px;
+     
+     
         background: #F4F6FF;
         padding: 8px;
         border-radius: 4px;
@@ -439,6 +439,9 @@ margin-left: auto;
         justify-content: center;
         display: block;
         flex-direction: grid;
+        margin-bottom: 16px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
 
@@ -448,15 +451,19 @@ margin-left: auto;
     }
 
     #conversion {
-        margin: 8px;
-        align-items: center;
+text-align: center;
+        margin:auto;
         display: flex;
         font-size: x-small;
         display: none; /* Hide conversion elements by default */
         flex-direction: column;
         justify-self: center;
-        gap: 8px ;
+        gap: 16px ;
         display: block;
+    }
+
+    #conversion a {
+      margin: auto;
     }
 
     #hamburger {
