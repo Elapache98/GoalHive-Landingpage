@@ -57,7 +57,7 @@ p {
 
 
 nav {
-    background-color: rgba(250, 239, 215, 0.75); /* Use rgba for background color to apply opacity only to the color */
+    background-color: rgba(255, 255, 255, 0.75); /* Use rgba for background color to apply opacity only to the color */
     backdrop-filter: blur(6px);
     padding: 0px 64px; /* Adjusted padding */
     width: auto;
@@ -98,6 +98,7 @@ nav a {
     text-decoration: none;
     color: #070809;
     font-weight: medium ;
+    font-size: 14px;
 }
 
 #mainBody, #secondBody{
@@ -121,6 +122,15 @@ nav a {
 
 }
 
+.filters{
+    display: flex;
+   text-wrap:nowrap;
+    overflow: scroll;
+    height: auto;
+    width: auto;
+    margin: auto;
+   
+}
 
 
 button {
@@ -139,7 +149,7 @@ button {
     
 }
 #conversion a {
-    margin-right: 8px;
+    margin-right: 28px;
 }
 #hamburger {
     
@@ -159,13 +169,13 @@ button {
     border: solid;
     border-radius: 16px 16px 0px 0px;
     border-color: rgb(65, 84, 114, .25);
-    width: 45vw;
-    align-content: baseline;  
+    width: 48vw;
+    align-content: center;  
     justify-self: center; 
     margin-left: auto;
     margin-right: auto;
    padding-bottom: 12px!important;
-   margin-top: 48px;
+   margin-top: 36px;
    border-top-width: .75px;
     border-right-width: .75px;
     border-left-width: .75px;
@@ -199,7 +209,7 @@ button {
     border-bottom-width: .75px;
     border-radius: 0px 0px 16px 16px;
     border-color: rgb(65, 84, 114, .25);
-    width: 45vw;
+    width: 48vw;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -258,29 +268,40 @@ text-align: left;
 
 #filterContext{
    
-    align-items: baseline;
-    justify-content: space-between;
-    align-content: baseline;  
+    align-items: center;
+    justify-content: center;
+    align-content: center;  
 }
+
+.filters{
+    display: flex;
+    overflow: scroll;
+    height: auto;
+    width: 75%;
+    gap: 4px;
+}
+
+
 .activeFilter{
     background-color:#edeffa;
     color: #415472;
-    margin-right: 8px;
-    margin-left: auto;
     border-style: solid;
     border-width: 2px;
     border-color:  #414FC7;
     border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
     
 }
 .inactiveFilter {
     background-color:#fafafa;
     color: #415472;
-    margin-right: 8px;
     border-radius: 8px;
     border-style: solid;
    border-color: rgb(106, 110, 116, .25);
    border-width: .25px;
+   margin-right: auto;
+margin-left: auto;
 
 }
 
@@ -333,7 +354,7 @@ text-align: left;
     margin-right: auto;
     padding: 24px;
     margin-bottom: 180px;
-    margin-top: 48px;
+    margin-top: 36px;
     
     height:auto;
   }
@@ -375,18 +396,16 @@ text-align: left;
   }
 
 
-  
-  
 
    
 /*responsive styling*/
 
-@media (max-width: 770px) and (min-width:320px) {
+@media (max-width: 800px) and (min-width:275px) {
 
     nav {
         background-color: rgba(250, 239, 215, 0.75); /* Use rgba for background color to apply opacity only to the color */
         backdrop-filter: blur(6px);
-        padding: 8px 32px; /* Adjusted padding */
+        padding: 8px 16px; /* Adjusted padding */
         width: auto;
         display: flex;
         flex-direction:grid;
@@ -456,6 +475,7 @@ text-align: left;
 
     h1{
         font-size: x-large;
+        margin-bottom: 28px;
     }
 
  h2{
@@ -465,7 +485,7 @@ font-size:18px;
  overflow-wrap:break-word;
  max-width: 700px;
  margin: auto;
- margin-bottom: 16px;
+ margin-bottom: 28px;
  line-height: 24px;
             
         
@@ -474,7 +494,7 @@ font-size:18px;
     body {
         font-family: Arial, sans-serif;
         margin: 0;
-        padding-top: 72px;
+        padding-top: 64px;
         background-color: #f9fafb;
         justify-content: center;
         align-items: center;
@@ -508,13 +528,13 @@ font-size:18px;
         display: flex;
         overflow: scroll;
         height: auto;
+        width: auto;
+        gap: 4px;
     }
     
     .activeFilter{
         background-color:#edeffa;
         color: #415472;
-        margin-right: 8px;
-        margin-left: auto;
         margin-bottom: 4px;
         width:fit-content;
         white-space: nowrap;
@@ -527,7 +547,6 @@ font-size:18px;
     .inactiveFilter {
         background-color: #fafafa;
         color: #415472;
-        margin-right: 8px;
         margin-bottom: 4px;
         width:fit-content;
         white-space: nowrap;
@@ -560,7 +579,7 @@ font-size:18px;
         width: 100%;
         height: 100%;
         border-radius: 4px;
-        aspect-ratio: 16/12;
+        aspect-ratio: 8/12;
     }
 
     #filterBottom{
@@ -601,7 +620,7 @@ font-size:18px;
         border-radius: 8px;
         padding: 4px 8px 4px 8px;
         width: fit-content;
-        font-size:x-small;
+        font-size:12px;
         align-self: center;
     
     }
@@ -613,13 +632,12 @@ font-size:18px;
         align-items: center;
         width:auto;
         position: sticky;
-        top: 128px;
+        top: 100px;
         box-shadow: 0 -1px 3px rgba(local-shadow-color, .1), 0 -1px 2px rgba(local-shadow-color, .25);
         margin-left: auto;
         margin-right: auto;
         padding: 16px;
         margin-top:28px ;
-        
         border-color: rgb(65, 84, 114, .25);
         
       }
