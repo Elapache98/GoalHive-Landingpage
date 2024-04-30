@@ -9,16 +9,16 @@ body {
 
 h1 {
 color: #415472;
-font-size:xx-large;
-max-width: 550px;
+font-size:48px;
+max-width: 700px;
 margin: auto;
 margin-bottom: 28px;
-    line-height: 32px;
+line-height: 48px;
 }
 
 h2{
     color: #415472;
-    font-size:26px; 
+    font-size:28px; 
     overflow-wrap:break-word;
     max-width: 700px;
     margin: auto;
@@ -106,7 +106,7 @@ nav a {
     margin: 0 auto; 
     padding: 8px;
     width:90vw;
-    margin-bottom: 32px;
+    margin-bottom: 56px;
 
 
 
@@ -169,7 +169,7 @@ button {
     border: solid;
     border-radius: 16px 16px 0px 0px;
     border-color: rgb(65, 84, 114, .25);
-    width: 48vw;
+    width: 45vw;
     align-content: center;  
     justify-self: center; 
     margin-left: auto;
@@ -189,10 +189,12 @@ button {
 #filterPicture{
     width: 100%;
     height:auto;
-    max-height: 350px;
+    max-height: 400px;
     border-radius: 4px;
     object-fit:cover;
     object-position: center;
+    position: relative;
+    aspect-ratio: 4 / 3; 
 
 }
 
@@ -209,7 +211,7 @@ button {
     border-bottom-width: .75px;
     border-radius: 0px 0px 16px 16px;
     border-color: rgb(65, 84, 114, .25);
-    width: 48vw;
+    width: 45vw;
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -277,7 +279,7 @@ text-align: left;
     display: flex;
     overflow: scroll;
     height: auto;
-    width: 75%;
+    width: 90%;
     gap: 4px;
 }
 
@@ -314,7 +316,7 @@ margin-left: auto;
     border: 1px solid rgb(106, 110, 116, .15);
     justify-self:start ; 
  width: auto !important;
- margin-bottom: 12px;
+ margin-bottom: 16px;
   
 }
 
@@ -346,7 +348,7 @@ margin-left: auto;
     border: solid .75px;
     border-color: rgb(65, 84, 114, .25);
     align-items: center;
-    width: 50vw;
+    width: 48vw;
     position: sticky;
     top: 90px;
     box-shadow: 0 -1px 3px rgba(local-shadow-color, .1), 0 -1px 2px rgba(local-shadow-color, .25);
@@ -400,10 +402,10 @@ margin-left: auto;
    
 /*responsive styling*/
 
-@media (max-width: 800px) and (min-width:275px) {
+@media (max-width: 768px) and (min-width:275px) {
 
     nav {
-        background-color: rgba(250, 239, 215, 0.75); /* Use rgba for background color to apply opacity only to the color */
+        background-color: rgba(255, 255, 255, 0.75); /* Use rgba for background color to apply opacity only to the color */
         backdrop-filter: blur(6px);
         padding: 8px 16px; /* Adjusted padding */
         width: auto;
@@ -481,19 +483,19 @@ text-align: center;
     }
 
     h1{
-        font-size: x-large;
+        font-size: 28px;
         margin-bottom: 28px;
+        line-height: 36px;
     }
 
  h2{
 
-font-size:18px;
+font-size:20px;
  color: #415472;
  overflow-wrap:break-word;
- max-width: 700px;
  margin: auto;
  margin-bottom: 28px;
- line-height: 24px;
+ line-height: 28px;
             
         
     }
@@ -536,7 +538,7 @@ font-size:18px;
         overflow: scroll;
         height: auto;
         width: auto;
-        gap: 4px;
+        gap: 16px;
     }
     
     .activeFilter{
@@ -571,7 +573,7 @@ font-size:18px;
         border: solid;
         border-radius: 16px 16px 0px 0px;
         border-color: rgb(65, 84, 114, .25);
-        width:auto;
+        width:80vw;
         align-content: baseline;  
         border-top-width: 1px;
         border-right-width: 1px;
@@ -586,7 +588,9 @@ font-size:18px;
         width: 100%;
         height: 100%;
         border-radius: 4px;
-        aspect-ratio: 8/12;
+        aspect-ratio: 4/3;
+        object-position: center;
+        object-fit: cover;
     }
 
     #filterBottom{
@@ -598,7 +602,7 @@ font-size:18px;
         border-left-width: 1px;
         border-bottom-width: 1px;
         border-radius: 0px 0px 16px 16px;
-        width: auto;
+        width: 80vw;
         height: auto;
         align-content: baseline;  
         justify-self: center; 
@@ -607,6 +611,7 @@ font-size:18px;
         margin-bottom: 8px;
         box-shadow: 2px 2px 4px 4px rgb(65, 84, 114,.045);
         border-color: rgb(65, 84, 114, .25);
+    
     
     }
     
@@ -618,6 +623,7 @@ font-size:18px;
         border-radius: 4px;
         object-fit:cover;
         object-position: center;
+        aspect-ratio: 4/3;
     
     }
     
