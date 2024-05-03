@@ -216,7 +216,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
-    margin-bottom: 28px;
+    margin-bottom: 16px;
     box-shadow: 2px 2px 4px 4px rgb(65, 84, 114,.045);
     border-color: rgb(65, 84, 114, .25);
     
@@ -483,9 +483,9 @@ text-align: center;
     }
 
     h1{
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 28px;
-        line-height: 36px;
+        line-height: 32px;
     }
 
  h2{
@@ -494,7 +494,7 @@ font-size:20px;
  color: #415472;
  overflow-wrap:break-word;
  margin: auto;
- margin-bottom: 28px;
+ margin-bottom: 24px;
  line-height: 28px;
             
         
