@@ -390,6 +390,16 @@ margin-left: auto;
   .stack_card:nth-child(4) {
     background-color: #FAFBFF;    
     z-index: 4;
+    
+
+    
+    
+
+  }
+
+  .stack_card:nth-child(5) {
+    background-color: #FAFBFF;    
+    z-index: 5;
     margin-bottom: -80px!important;
     
 
@@ -410,7 +420,7 @@ margin-left: auto;
 }
 
   #card{
-    background-color: #FAFBFF;
+    background-color: #f8f9fe;
     padding: 16px;
     border: .25px solid;
     border-color: rgb(65, 84, 114,.25);
