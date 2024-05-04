@@ -28,10 +28,11 @@ h2{
 }
 
 h4{
-    color: #415472;
-    font-size:medium; 
-    margin-top: 16px;
-    margin-bottom: 8px;
+    color: #555eb3;
+        font-size:medium; 
+       margin: auto;
+       margin-top: 8px;
+       margin-bottom: 8px;
 }
 
 
@@ -325,7 +326,7 @@ margin-left: auto;
     margin: 0 auto; 
     width:90vw;
     height: auto;
-    margin-bottom: 16px;
+    margin-bottom: 64px;
 }
 
 .stack {
@@ -397,6 +398,42 @@ margin-left: auto;
 
   }
 
+  #cardContainer {
+   
+    display: flex;
+    flex-wrap:wrap;
+    align-self: start;
+    gap: 24px;
+    margin-top: 36px;
+    justify-items: center;
+   justify-content: center;
+}
+
+  #card{
+    background-color: #FAFBFF;
+    padding: 16px;
+    border: .25px solid;
+    border-color: rgb(65, 84, 114,.25);
+    border-radius: 12px;
+    width:390px;
+    align-content: flex-start;
+    box-shadow: 2px 2px 4px 4px rgb(65, 84, 114,.045);
+  }
+
+
+
+  .svg{
+    background-color: #fafafa;
+    padding: 6px;
+    border-radius: 5px;
+    color: rgb(106, 110, 116, .95);
+   margin-right: 8px;
+   border: .25px solid rgb(106, 110, 116, .25);
+   stroke-width: 2px;
+   width:auto;
+   
+
+  }
 
 
    
@@ -490,15 +527,24 @@ text-align: center;
 
  h2{
 
-font-size:20px;
+font-size:22px;
  color: #415472;
  overflow-wrap:break-word;
  margin: auto;
- margin-bottom: 24px;
+ margin-bottom: 16px;
  line-height: 28px;
             
         
     }
+
+ h4{
+        color: #555eb3;
+        font-size:medium; 
+       margin: auto;
+       margin-top: 8px;
+       margin-bottom: 8px;
+    }
+    
 
     body {
         font-family: Arial, sans-serif;
@@ -638,6 +684,14 @@ font-size:20px;
     
     }
 
+    #stackContainer{
+        text-align:center;
+        margin: 0 auto; 
+        width:90vw;
+        height: auto;
+        margin-bottom: 8px;
+    }
+
     .stack_card {
     
         border-radius: 16px;
@@ -654,6 +708,21 @@ font-size:20px;
         border-color: rgb(65, 84, 114, .25);
         
       }
+
+      #card{
+        background-color: #FAFBFF;
+        padding: 16px;
+        border: .25px solid;
+        border-color: rgb(65, 84, 114,.25);
+        border-radius: 12px;
+        width:300px;
+        align-content: flex-start;
+        box-shadow: 2px 2px 4px 4px rgb(65, 84, 114,.045);
+      }
+    
+      .card {
+        display: none;
+    }
 
 }
 
