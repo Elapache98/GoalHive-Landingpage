@@ -206,7 +206,7 @@ button {
     object-fit:cover;
     object-position: center;
     position: relative;
-    aspect-ratio: 4 / 3; 
+    aspect-ratio: 16 / 9; 
 
 }
 
@@ -457,11 +457,40 @@ margin-left: auto;
 
   }
 
+  #scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 100px;
+    overflow: hidden;
+  }
+
+
+  
+  #scrolltext {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  
+    /* animation properties */
+    transform: translateY(-100%);
+    animation: my-animation 5s linear infinite;
+  }
+  
+  /* Define keyframes for animation */
+  @keyframes my-animation {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+
 
    
 /*responsive styling*/
 
-@media (max-width: 768px) and (min-width:275px) {
+@media (max-width: 868px) and (min-width:275px) {
 
     nav {
         background-color: rgba(255, 255, 255, 0.75); /* Use rgba for background color to apply opacity only to the color */
