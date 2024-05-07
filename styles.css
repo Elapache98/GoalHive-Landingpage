@@ -62,17 +62,17 @@ p {
 
 
 #logo {
-    height: 56px; /* Set the height of the logo */
-    margin-right: 16px; /* Add some spacing between logo and nav */
-    margin-left: -12px;
+    height: 48px; /* Set the height of the logo */
+    margin-right: 8px; /* Add some spacing between logo and nav */
+    margin-left: -8px;
 }
 
 
 nav {
     background-color: rgba(255, 255, 255, 0.75); /* Use rgba for background color to apply opacity only to the color */
     backdrop-filter: blur(6px);
-    padding: 0px 64px; /* Adjusted padding */
-    width: auto;
+    padding: 0px 12px; /* Adjusted padding */
+    width: 70vw;
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -81,13 +81,19 @@ nav {
     left: 0;
     right: 0;
     z-index: 1000;
+    margin: auto;
+    margin-top: 8px;
+    border-radius: 50px;
+    border-width: .25px;
+    border: solid;
+    box-shadow: 2px 2px 2px 2px rgba(49, 106, 197, 0.025);
+    border-color: rgb(65, 79, 199,.15);
 }
 
 
 nav li {
     margin: 10px 8px; /* Adjusted margin */
     margin-right: 16px; /* Adjusted margin-right */
-    background: #F4F6FF;
     padding: 8px; /* Adjusted padding */
     border-radius: 4px;
     font-size: small;
@@ -423,7 +429,8 @@ margin-left: auto;
    
     display: flex;
     flex-wrap:wrap;
-    align-self: start;
+    align-self: center;
+    align-content: center;
     gap: 24px;
     margin-top: 36px;
     justify-items: center;
@@ -438,6 +445,7 @@ margin-left: auto;
     width:390px;
     align-content: flex-start;
     box-shadow: 2px 2px 4px 4px rgba(49, 106, 197, 0.025);
+    border-color: rgb(65, 84, 114,.15);
   }
 
 
@@ -456,45 +464,79 @@ margin-left: auto;
 
   }
 
-  #scroll-container {
-    border: 3px solid black;
-    border-radius: 5px;
-    height: 100px;
-    overflow: hidden;
+  #scrollSection {
+
+    background-color: white;
+    width: 58vw;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    padding: 16px;
+    border-radius: 12px;
+    border: solid .75px;
+    border-color: rgb(65, 84, 114,.15);
+    box-shadow: 2px 2px 4px 4px rgba(49, 106, 197, 0.025);
+justify-content: start;
+overflow:hidden;
+margin-bottom: 64px;
+
   }
 
+  #scroll-container {
+    height: auto;
+    overflow:hidden;
+    width: auto;
+    margin: auto;
+    height: auto;
 
   
+  }
+
+  #CTA{
+    display: grid;
+   justify-content: flex-start;
+    align-content: center;
+    gap: 16px;
+    text-align: left;
+    margin-right: auto;
+    width: auto;
+   }
+
+
   #scrolltext {
     height: 100%;
-    width: 100%;
+    width: fit-content;
     text-align: center;
+    justify-self: center;
   
     /* animation properties */
     transform: translateY(-100%);
-    animation: my-animation 5s linear infinite;
+    animation: my-animation 15s linear infinite;
   }
   
   /* Define keyframes for animation */
   @keyframes my-animation {
     from {
-      transform: translateY(-100%);
+      transform: translateY(100%);
     }
     to {
-      transform: translateY(100%);
+      transform: translateY(-100%);
     }
   }
 
+  .paused{
+    animation-play-state: paused;
+  }
 
    
 /*responsive styling*/
 
-@media (max-width: 868px) and (min-width:275px) {
+@media (max-width: 765px) and (min-width:275px) {
 
     nav {
-        background-color: rgba(255, 255, 255, 0.75); /* Use rgba for background color to apply opacity only to the color */
+        background-color: rgba(255, 255, 255, 0.75); 
         backdrop-filter: blur(6px);
-        padding: 8px 16px; /* Adjusted padding */
+        padding: 8px 8px; /* Adjusted padding */
         width: auto;
         display: flex;
         flex-direction:grid;
@@ -506,6 +548,8 @@ margin-left: auto;
         left: 0;
         right: 0;
       row-gap: 8px;
+      border-radius: 0px;
+      margin-top: 0px;
     }
 
 
@@ -518,12 +562,12 @@ margin-left: auto;
         flex-direction: column;
     }
 
-    nav li {
+   nav li {
         font-size: x-small;
         justify-content: center;
         display: block;
         flex-direction: grid;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
         margin-right: auto;
         margin-left: auto;
     }
@@ -548,6 +592,7 @@ text-align: center;
 
     #conversion a {
       margin: auto;
+      margin-bottom: 8px;
     }
 
     #hamburger {
@@ -607,6 +652,16 @@ font-size:20px;
 
 
     }
+
+button {
+        padding: 8px 11px;
+        background-color: #414FC7;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+        margin-left: auto;
+    }
+    
 
     #hero{
         width:100%;
@@ -748,18 +803,40 @@ font-size:20px;
         
       }
 
-      #card{
-        background-color: #ffffff;
-        padding: 16px;
-        border: .25px solid;
-        border-color: rgb(65, 84, 114,.25);
+
+
+
+      #scrollSection {
+
+gap:16px;
+        background-color: white;
+        width: 80vw;
+        margin: auto;
+        display: grid;
         border-radius: 12px;
-        width:300px;
-        align-content: flex-start;
-        box-shadow: 2px 2px 4px 4px rgb(65, 84, 114,.045);
+        border: solid .75px;
+    align-items: center;
+    margin-bottom: 64px;
+    border-color: rgb(65, 84, 114,.15);
+
+    
       }
     
-   
+#CTA{
+    display: grid;
+    gap: 16px;
+   }
+
+#scroll-container {
+    border-radius: 5px;
+    height: fit-content;
+    overflow:hidden;
+    width: auto;
+    margin: auto;
+    height: 300px;
+  }
+
+  
 
 }
 

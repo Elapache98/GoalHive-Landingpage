@@ -81,3 +81,13 @@ function filterSelection(filter) {
 }
 
 
+
+function sayPause(){
+    const scrollText = document.getElementById('scrolltext');
+    scrollText.style.animationPlayState = 'paused';
+}
+
+function sayGo() {
+    const scrollText = document.getElementById('scrolltext');
+    scrollText.style.animationPlayState = 'running';
+  }
