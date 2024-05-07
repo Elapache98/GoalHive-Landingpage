@@ -434,7 +434,6 @@ margin-left: auto;
     background-color: #ffffff;
     padding: 16px;
     border: .25px solid;
-    border-color: rgb(65, 84, 114,.15);
     border-radius: 10px;
     width:390px;
     align-content: flex-start;
@@ -520,11 +519,6 @@ margin-left: auto;
     }
 
     nav li {
-     
-     
-        background: #F4F6FF;
-        padding: 8px;
-        border-radius: 4px;
         font-size: x-small;
         justify-content: center;
         display: block;
