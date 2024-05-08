@@ -161,6 +161,8 @@ button {
     margin-left: auto;
 }
 
+
+
 #conversion{
     margin-left: auto;
    align-items: center;
@@ -818,6 +820,7 @@ gap:16px;
     align-items: center;
     margin-bottom: 64px;
     border-color: rgb(65, 84, 114,.15);
+    height: 320px;
 
     
       }
@@ -833,7 +836,7 @@ gap:16px;
     overflow:hidden;
     width: auto;
     margin: auto;
-    height: 300px;
+    height: auto;
   }
 
   
