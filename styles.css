@@ -69,7 +69,7 @@ p {
 
 
 nav {
-    background-color: rgba(255, 255, 255, 0.75); /* Use rgba for background color to apply opacity only to the color */
+    background-color: rgba(255, 255, 255, 0.25); /* Use rgba for background color to apply opacity only to the color */
     backdrop-filter: blur(6px);
     padding: 0px 12px; /* Adjusted padding */
     width: 70vw;
@@ -161,7 +161,28 @@ button {
     margin-left: auto;
 }
 
+#actionButton {
+    padding: 8px 16px;
+    background-color: #414FC7;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: auto;
+    box-shadow: 2px 2px 12px 12px rgb(65, 84, 114,.005);
+}
 
+
+#actionButton:hover {
+    padding: 8px 16px;
+    background-color: #5261e5;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: auto;
+    box-shadow: 2px 2px 12px 12px rgb(65, 84, 114,.005);
+}
 
 #conversion{
     margin-left: auto;
@@ -513,7 +534,7 @@ margin-bottom: 64px;
   
     /* animation properties */
     transform: translateY(-100%);
-    animation: my-animation 15s linear infinite;
+    animation: my-animation 16s linear infinite;
   }
   
   /* Define keyframes for animation */
@@ -536,7 +557,7 @@ margin-bottom: 64px;
 @media (max-width: 765px) and (min-width:275px) {
 
     nav {
-        background-color: rgba(255, 255, 255, 0.75); 
+        background-color: rgba(255, 255, 255, 0.25); 
         backdrop-filter: blur(6px);
         padding: 8px 8px; /* Adjusted padding */
         width: auto;

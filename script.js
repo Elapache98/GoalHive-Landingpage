@@ -91,3 +91,5 @@ function sayGo() {
     const scrollText = document.getElementById('scrolltext');
     scrollText.style.animationPlayState = 'running';
   }
+
+  
