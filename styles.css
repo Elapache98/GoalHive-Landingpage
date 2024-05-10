@@ -852,7 +852,6 @@ gap:16px;
    }
 
 #scroll-container {
-    border-radius: 5px;
     height: fit-content;
     overflow:hidden;
     width: auto;
