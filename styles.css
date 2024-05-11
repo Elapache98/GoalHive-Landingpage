@@ -549,17 +549,25 @@ margin-bottom: 64px;
     animation-play-state: paused;
   }
 
-#footer{
-background-color: rgba(255, 255, 255);
-  padding: 16px;
-  text-align: left;
 
- 
+
+#footer{
+    background-color: #ffffff;
+  padding-left: 32px!important;
+  padding: 16px;
+  border-color: #070809;
+  border: solid;
+  border-width: .75px 0px 0px 0px;
+  border-color: rgb(65, 84, 114,.15);
+  box-shadow: 2px 2px 4px 4px rgba(49, 106, 197, 0.025);
+
+
+
 }
   
 #linkContainer{
    display: flex;
-   align-content: center;
+   align-items: center;
 }
    
 /*responsive styling*/
@@ -877,16 +885,36 @@ gap:16px;
 
   #footer{
     background-color: #ffffff;
-  padding: 1px!important;
+  padding: 16px!important;
+  border-color: #070809;
+  border: solid;
+  border-width: .75px 0px 0px 0px;
+  border-color: rgb(65, 84, 114,.15);
+  box-shadow: 2px 2px 4px 4px rgba(49, 106, 197, 0.025);
+
+
 
 }
+
 #linkContainer{
   display: grid;
+flex-direction: row;
+  gap: 8px;
+  align-items: center;
  }
+
+
+#links{
+  display: flex;
+  gap: 0px;
+  margin-bottom: 16px;
+
+
+ 
 
 }
 
-
+}
 
 
 
