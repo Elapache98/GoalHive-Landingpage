@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
 conversion.style.display = 'flex';
 
 
-
-
 function toggleMenu() {
     // Toggle display for navLinks and conversion
     const shouldDisplay = navLinks.style.display === 'none' || navLinks.style.display === '';
@@ -20,10 +18,8 @@ function toggleMenu() {
     // Change flex direction to column when navLinks are displayed
     if (shouldDisplay) {
         nav.style.flexDirection = 'column';
-       
     } else {
         nav.style.flexDirection = ''; // Revert to default style
-        
     }
 }
 
