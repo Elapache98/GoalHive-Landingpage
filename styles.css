@@ -94,9 +94,9 @@ nav {
 nav li {
     margin: 10px 8px; /* Adjusted margin */
     margin-right: 16px; /* Adjusted margin-right */
-    padding: 8px; /* Adjusted padding */
-    font-size: small;
-    justify-self: flex-end;
+    padding: 6px; /* Adjusted padding */
+    font-size: smaller;
+    justify-self: flex-end;   
 }
 
 nav ul {
@@ -112,7 +112,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #070809;
+    color: #6a6e74;;
     font-weight: medium ;
     font-size: 14px;
 }
@@ -158,6 +158,8 @@ button {
     border-radius: 50px;
     cursor: pointer;
     margin-left: auto;
+    align-content: center;
+    text-align: center;
 
 
 }
@@ -585,7 +587,7 @@ margin-bottom: 64px;
         padding: 8px 8px; /* Adjusted padding */
         width: auto;
         display: flex;
-        flex-direction:grid;
+       
         justify-content: center;
         justify-items: center;
         flex-grow: 1;
@@ -641,12 +643,28 @@ text-align: center;
     #conversion a {
       margin: auto;
       margin-bottom: 8px;
+      display: block;
     }
 
     #hamburger {
-        display: block!important; /* Display the hamburger icon */
+        display: flex; /* Display the hamburger icon */
+        text-align: center;
+        align-items: center;
+        font-size: 14px;
+        width: 30px;
+        height: 28px;
+        justify-self: center;
+       
+
         
     }
+
+
+
+
+  
+
+
 
     #mainBody, #secondBody{
         text-align:center; 
@@ -702,12 +720,12 @@ font-size:20px;
     }
 
 button {
-        padding: 8px 11px;
+        padding: 9px 9.55px;
         background-color: #414FC7;
         color: #fff;
         border: none;
         border-radius: 50px;
-        margin-left: auto;
+        
     }
     
 
