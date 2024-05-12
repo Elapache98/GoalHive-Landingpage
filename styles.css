@@ -159,6 +159,8 @@ button {
     border-radius: 50px;
     cursor: pointer;
     margin-left: auto;
+
+
 }
 
 #actionButton {
@@ -168,8 +170,12 @@ button {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    margin-left: auto;
-    box-shadow: 2px 2px 12px 12px rgb(65, 84, 114,.005);
+    margin: auto;
+    box-shadow: 2px 2px 12px 12px rgb(65, 84, 114,.025);
+    align-items: center;
+    display: flex;
+   gap:10px;
+
 }
 
 
