@@ -566,7 +566,7 @@ margin-bottom: 64px;
   border: solid;
   border-width: .75px 0px 0px 0px;
   border-color: rgb(65, 84, 114,.15);
-  box-shadow: 2px 2px 4px 4px rgba(49, 106, 197, 0.025);
+  box-shadow: 2px 2px 4px 4px rgba(49, 106, 197, 0.015);
 
 
 
@@ -577,6 +577,83 @@ margin-bottom: 64px;
    align-items: center;
 }
    
+
+.faq-heading {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    flex: 1;
+    margin-bottom: 0px;
+    margin-right: 4px;
+  }
+  
+  .faq-text {
+    color: #919191;
+    width: auto;
+    padding: 16px;
+    margin-bottom: 30px;
+    text-align: left;
+    display: none; /* Hide text by default */
+  }
+  
+  .faq {
+    width: 50vw;
+    margin: auto;
+
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+
+
+  }
+  
+  .faq label {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space out the heading and arrow */
+    cursor: pointer;
+    padding:16px;
+  }
+  
+  .faq input[type="checkbox"] {
+    display: none;
+  }
+  
+  .faq .faq-arrow {
+    width: 8px; /* Adjust size as needed */
+    height: 8px;
+    transition: transform 0.8s;
+    border-top: 2px solid rgba(0, 0, 0, 0.33);
+    border-right: 2px solid rgba(0, 0, 0, 0.33);
+    transform: rotate(45deg);
+  }
+  
+  .faq input[type="checkbox"]:checked + label > .faq-arrow {
+    transform: rotate(135deg);
+  }
+  
+  .faq input[type="checkbox"]:checked + label + .faq-text {
+    display: block;
+  }
+  
+  #faqComponent{
+    background-color: #ffffff;
+    border-radius: 12px;
+    height: auto;
+    border-color: rgb(65, 84, 114,.75);
+    box-shadow: 2px 2px 4px 4px rgba(49, 106, 197, 0.09);
+  }
+
+
+
+
+
+
+
+
+
+
+
 /*responsive styling*/
 
 @media (max-width: 768px) and (min-width:275px) {
@@ -936,6 +1013,18 @@ flex-direction: row;
  
 
 }
+
+.faq {
+    width: 90vw;
+    margin: auto;
+
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+
+
+  }
+
 
 }
 
