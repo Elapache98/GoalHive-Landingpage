@@ -393,8 +393,9 @@ margin-left: auto;
 .stack_card {
     
     border-radius: 16px;
-    border: solid .75px;
-    border-color: rgb(65, 84, 114, .25);
+    border: solid;
+    border-width: .75px .75px .75px .75px;
+    border-color: rgba(147, 159, 179, 0.25);
     align-items: center;
     width: 48vw;
     position: sticky;
@@ -559,9 +560,10 @@ margin-bottom: 64px;
 
 
 #footer{
-    background-color: #ffffff;
+    background-color: #fafafc;
   padding-left: 32px!important;
   padding: 16px;
+  padding-bottom: 24px;
   border-color: #070809;
   border: solid;
   border-width: .75px 0px 0px 0px;
@@ -941,7 +943,7 @@ button {
         margin-right: auto;
         padding: 16px;
         margin-top:28px ;
-        border-color: rgb(65, 84, 114, .25);
+        border-color: rgba(147, 159, 179, 0.25);
         
       }
 
@@ -984,7 +986,7 @@ gap:16px;
   }
 
   #footer{
-    background-color: #ffffff;
+    background-color: #fafafc;
   padding: 16px!important;
   border-color: #070809;
   border: solid;
