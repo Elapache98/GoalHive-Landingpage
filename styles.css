@@ -93,7 +93,6 @@ nav {
 
 nav li {
     margin: 10px 8px; /* Adjusted margin */
-    margin-right: 16px; /* Adjusted margin-right */
     padding: 6px; /* Adjusted padding */
     font-size: smaller;
     justify-self: flex-end;   
