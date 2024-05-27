@@ -1,3 +1,64 @@
+document.addEventListener('DOMContentLoaded', function () {
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('nav-links');
+    var conversion = document.getElementById('conversion');
+    var nav = document.getElementById('nav');
+
+    // Initially set the navigation display based on window width
+    function setInitialNavState() {
+        if (window.innerWidth > 770) {
+            navLinks.style.display = 'flex';
+            conversion.style.display = 'flex';
+            nav.style.flexDirection = 'row';
+            hamburger.style.display = 'none';
+        } else {
+            navLinks.style.display = 'none';
+            conversion.style.display = 'none';
+            nav.style.flexDirection = 'row';
+            hamburger.style.display = 'block';
+            hamburger.textContent = '☰';
+        }
+    }
+
+    setInitialNavState();
+
+    function toggleMenu() {
+        const shouldDisplay = navLinks.style.display === 'none' || navLinks.style.display === '';
+        navLinks.style.display = shouldDisplay ? 'flex' : 'none';
+        conversion.style.display = shouldDisplay ? 'flex' : 'none';
+
+        if (shouldDisplay) {
+            nav.style.flexDirection = 'column';
+        } else {
+            nav.style.flexDirection = '';
+        }
+
+        if (hamburger.textContent === '☰') {
+            hamburger.textContent = '×';
+        } else {
+            hamburger.textContent = '☰';
+        }
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 770) {
+            navLinks.style.display = 'flex';
+            conversion.style.display = 'flex';
+            nav.style.flexDirection = 'row';
+            hamburger.style.display = 'none';
+            hamburger.textContent = '☰';
+        } else {
+            navLinks.style.display = 'none';
+            conversion.style.display = 'none';
+            nav.style.flexDirection = 'column';
+            hamburger.style.display = 'block';
+            hamburger.textContent = '☰';
+        }
+    });
+});
+
 
 function filterSelection(filter) {
     // Hide all filter elements

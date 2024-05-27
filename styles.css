@@ -669,13 +669,19 @@ margin-bottom: 64px;
 
 @media (max-width: 768px) and (min-width:275px) {
 
-    nav {
-        background-color: rgba(250, 241, 222, 0.5);
+  menu{
+  
+    margin: auto;
+    display: flex!important;
+  }  
+  
+  nav {
+        background-color: rgba(250, 241, 222, 0.095);
         backdrop-filter: blur(6px);
         padding: 8px 8px; /* Adjusted padding */
         width: auto;
         display: flex;
-       
+        flex-direction: row;
         justify-content: center;
         justify-items: center;
         flex-grow: 1;
@@ -689,6 +695,8 @@ margin-bottom: 64px;
       border-width: 0px 0px .75px 0px ;
       border-color: rgba(83, 79, 11, 0.15);
     }
+
+   
 
 
 
@@ -717,7 +725,8 @@ margin-bottom: 64px;
 
     #logo {
         height: 36px;
-        margin-right: 8px; /* Add some spacing between logo and nav */
+        margin: auto; /* Add some spacing between logo and nav */
+        float: left;
     }
 
     #conversion {
@@ -726,7 +735,7 @@ text-align: center;
         display: flex;
         font-size: x-small;
         display: none; /* Hide conversion elements by default */
-        flex-direction: column;
+        flex-direction:column;
         justify-self: center;
         gap: 8px ;
         display: block;
@@ -747,16 +756,23 @@ text-align: center;
         display: flex; /* Display the hamburger icon */
         text-align: center;
         align-items: center;
-        font-size: 14px;
-        width: 30px;
-        height: 28px;
+        font-size: 16px;
+        width: 35px;
+        height: 35px;
         justify-self: center;
+        margin-left: auto;
        
 
         
     }
 
-
+    .show-menu #nav-links,
+    .show-menu #conversion {
+        display: flex; /* Shown when the menu is toggled */
+    }
+    
+    .show-menu #hamburger {
+        content: '×';}
 
 
   
